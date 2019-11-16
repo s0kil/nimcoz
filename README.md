@@ -5,6 +5,7 @@ This is a Nim Wrapper For [Coz Profiler](https://github.com/plasma-umass/coz)
 ## For Background on Causal Profiling:
 
 - Paper: http://www.sigops.org/s/conferences/sosp/2015/current/2015-Monterey/printable/090-curtsinger.pdf
+- Video: https://www.youtube.com/watch?v=r-TLSBdHe1A
 
 ## Usage
 
