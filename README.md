@@ -16,8 +16,11 @@ This is a Nim Wrapper For [Coz Profiler](https://github.com/plasma-umass/coz)
   - OS X: Easiest way is to run a docker image with Linux and install Coz
 
 - Setup
+
   - Install nimcoz: `nimble install https://github.com/s0kil/nimcoz`
-  - Specify Progress Points In Your Program: [Docs](https://s0kil.github.io/nimcoz/index.html)
+  - Specify Progress Points In Your Program:
+    - [Docs](https://s0kil.github.io/nimcoz/index.html)
+    - [Where to place progress points](https://github.com/plasma-umass/coz/issues/103#issuecomment-486744882)
 
 - Build
 

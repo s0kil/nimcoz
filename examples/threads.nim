@@ -1,18 +1,21 @@
 import ../src/nimcoz
 
 proc a(): void {.thread.} =
-  cozBegin("A")
-  for x in countup(0, 2000000000): discard
-  cozEnd("A")
+  cozBegin("aThread")
+  for index in countup(0, (200_000_0000 * 2)):
+    if (index mod 100) == 0:
+      cozNamedProgress("Mod100")
+  cozEnd("aThread")
 
 proc b(): void {.thread.} =
-  cozBegin("B")
-  for x in countup(0, 1900000000): discard
-  cozEnd("B")
+  cozBegin("bThread")
+  for index in countup(0, (200_000_0000 * 2)):
+    if (index mod 200) == 0:
+      cozNamedProgress("Mod200")
+  cozEnd("bThread")
 
 proc main() =
-  cozBegin("Main")
-  defer: cozEnd("Main")
+  cozScope("Main")
 
   var threadA: Thread[void]
   var threadB: Thread[void]
