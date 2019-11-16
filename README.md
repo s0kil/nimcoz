@@ -4,6 +4,7 @@ This is a Nim Wrapper For [Coz Profiler](https://github.com/plasma-umass/coz)
 
 ## For Background on Causal Profiling:
 
+- Introduction: https://mattwarren.org/2016/03/30/Coz-Finding-Code-that-Counts-with-Causal-Profiling/
 - Paper: http://www.sigops.org/s/conferences/sosp/2015/current/2015-Monterey/printable/090-curtsinger.pdf
 - Video: ["Performance Matters" by Emery Berger](https://www.youtube.com/watch?v=r-TLSBdHe1A)
 - Video: [Coz: finding code that counts with causal profiling](https://www.youtube.com/watch?v=jE0V-p1odPg)
