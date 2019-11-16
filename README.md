@@ -9,10 +9,24 @@ This is a Nim Wrapper For [Coz Profiler](https://github.com/plasma-umass/coz)
 ## Usage
 
 - Install Coz: https://github.com/plasma-umass/coz
+
   - Linux: `apt install coz-profiler`
   - OS X: Easiest way is to run a docker image with Linux and install Coz
+
+- Build
+
+  - `nim c --debuginfo:on --debugger:native --passC:"-gdwarf-3" --passL:"-ldl" program.nim`
+
+- Run
+
+  - `coz run --- ./program`
+
+- View Profile
+  - Load `profile.coz` into https://plasma-umass.org/coz/
+  - Or Locally: `xdg-open /usr/share/coz-profiler/viewer/index.htm`
 
 #### Related
 
 - https://github.com/urjitbhatia/cozgo
 - https://github.com/alexcrichton/coz-rs
+- https://github.com/filipesilva/node-coz
